@@ -1,0 +1,30 @@
+{
+  "name": "sketchy",
+  "version": "0.1.0",
+  "description": "Application to help you with your daily sketch practice",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "lint": "eslint --cache .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazandzhiro/Sketchy.git"
+  },
+  "keywords": [
+    "sketching",
+    "drawing",
+    "practice"
+  ],
+  "author": "Ivan Kazandzhiev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kazandzhiro/Sketchy/issues"
+  },
+  "homepage": "https://kazandzhiro.github.com/Sketchy",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13",
+    "eslint": "^4.1.1"
+  }
+}
