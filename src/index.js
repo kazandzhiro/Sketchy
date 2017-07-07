@@ -1,12 +1,18 @@
-const electron = require('electron')
+const {app, BrowserWindow } = require('electron')
 
-const app = electron.app;
-const BrowserWindow = electron.BrowserWindow
+require('electron-reload')(__dirname, {
+  electron: require('electron-prebuilt')
+});
 
 let mainWindow;
 
 app.on('ready', () => {
-  mainWindow = new BrowserWindow({ width: 800, height: 600 });
+  mainWindow = new BrowserWindow({ 
+    fullscreen: true,
+    x: 1920,
+    y: 0,
+    autoHideMenuBar: true
+  });
 
   mainWindow.loadURL(`file://${__dirname}/index.html`);
 

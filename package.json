@@ -25,6 +25,7 @@
   "homepage": "https://kazandzhiro.github.com/Sketchy",
   "devDependencies": {
     "electron-prebuilt": "^1.4.13",
+    "electron-reload": "^1.2.1",
     "eslint": "^4.1.1"
   }
 }
