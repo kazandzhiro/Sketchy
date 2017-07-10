@@ -8,7 +8,6 @@ let mainWindow;
 
 app.on('ready', () => {
   mainWindow = new BrowserWindow({ 
-    fullscreen: true,
     x: 1920,
     y: 0,
     autoHideMenuBar: true
