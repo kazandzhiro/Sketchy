@@ -4,9 +4,22 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <!-- Make sure jQuery loads-->
+    <script>
+        window.nodeRequire = require;
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+    </script>
+   <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="../semantic/dist/semantic.min.js" defer></script>
   </head>
-  <body>
-    Hello
+  <body>  
+    
   </body>
 </html>
