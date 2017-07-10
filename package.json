@@ -26,5 +26,8 @@
   "devDependencies": {
     "electron-prebuilt": "^1.4.13",
     "eslint": "^4.1.1"
+  },
+  "dependencies": {
+    "electron-store": "^1.2.0"
   }
 }
