@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
-    <!--<link href="css/style.css" rel="stylesheet">-->
-    <!-- Make sure jQuery loads-->
-    <script>
-        window.nodeRequire = require;
-        delete window.require;
-        delete window.exports;
-        delete window.module;
-    </script>
-    <script src="./assets/js/jquery-3.2.1.min.js"></script>
-    <script src="../semantic/dist/semantic.min.js"></script>
-  </head>
-  <body> 
-  </body>
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../semantic/dist/semantic.min.css">
+  <link href="./assets/css/styles.css" rel="stylesheet">
+  <script src="./common/main.js"></script>
+  <!-- Make sure jQuery loads-->
+  <!--<script>
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+  </script>
+  <script src="./assets/js/jquery-3.2.1.min.js"></script>
+  <script src="../semantic/dist/semantic.min.js"></script>-->
+</head>
+
+<body onload="onInit();">
+  <div id="settings" class="ui container app">
+    <div class="ui grid">
+      <div class="column">
+        <form id="form" class="ui form">
+          <div class="ui label">Step 1</div>
+          <div class="ui fluid action input">
+            <input id="path" placeholder="Paste images path or..." type="text" disabled>
+            <div class="ui button" onclick="onAddImgPath(event)">Add</div>
+          </div>
+          <div class="ui label">Step 2</div>
+          <div class="img-folders"></div>
+          <div class="timepicker">
+            <div class="ui fluid action input required">
+                <input name="minutes" placeholder="Input minutes" type="number" required="required" min="0" max="240">
+                <input name="seconds" placeholder="Input seconds" type="number" value=10 required="required" min="20" max="59">
+            </div>
+          </div>
+          <div class="ui button" onclick="startPractice(event)">Start Sketching!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="sketches" style="display: none">
+    <div id="timer"></div>
+    <img src="" alt="" id="sketch">
+  </div>
+</body>
+
 </html>

@@ -1,0 +1,43 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#sketches, img {
+  width: 100vw;
+  height: 100vh;
+}
+
+img {
+  object-fit: contain;
+}
+
+.ui.grid {
+  margin-top: 20px;
+}
+
+#path {
+  font-weight: bold;
+  opacity: 1;
+}
+
+.app .ui.label, .ui.button {
+  margin:15px 0;
+}
+
+.app .ui.checkbox {
+  margin-right:15px;
+}
+
+#timer {
+  position: fixed;
+  top: 0;
+  font-size: 2em;
+  right: 0;
+  display: block;
+  width: 100px;
+  line-height: 1;
+  text-align: center;
+  background-color: cadetblue;
+}
