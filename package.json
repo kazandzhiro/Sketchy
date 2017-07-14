@@ -1,11 +1,13 @@
 {
   "name": "sketchy",
+  "productName": "Sketchy",
   "version": "0.1.0",
   "description": "Application to help you with your daily sketch practice",
   "main": "src/index.js",
   "scripts": {
     "start": "electron .",
     "lint": "eslint --cache .",
+    "package": "build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,6 +26,7 @@
   },
   "homepage": "https://kazandzhiro.github.com/Sketchy",
   "devDependencies": {
+    "electron-builder": "^19.16.0",
     "electron-prebuilt": "^1.4.13",
     "electron-reload": "^1.2.1",
     "eslint": "^4.1.1"
@@ -31,5 +34,8 @@
   "dependencies": {
     "electron-store": "^1.2.0",
     "semantic-ui": "^2.2.10"
+  },
+  "build": {
+    "appId": "com.kazandzhiro.Sketchy"
   }
 }
