@@ -26,14 +26,14 @@
   },
   "homepage": "https://kazandzhiro.github.com/Sketchy",
   "devDependencies": {
-    "electron-builder": "^19.16.0",
-    "electron-prebuilt": "^1.4.13",
-    "electron-reload": "^1.2.1",
-    "eslint": "^4.1.1"
+    "electron-builder": "^20.13.1",
+    "electron-prebuilt": "*",
+    "electron-reload": "^1.2.2",
+    "eslint": "^4.19.1"
   },
   "dependencies": {
-    "electron-store": "^1.2.0",
-    "semantic-ui": "^2.2.10"
+    "electron-store": "^1.3.0",
+    "semantic-ui": "^2.3.1"
   },
   "build": {
     "appId": "com.kazandzhiro.Sketchy"
